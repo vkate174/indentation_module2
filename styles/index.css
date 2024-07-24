@@ -1,3 +1,27 @@
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"),
+        url("../fonts/Roboto-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"),
+        url("../fonts/Roboto-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-display: swap;
+} 
+
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"),
+        url("../fonts/Roboto-Black.ttf") format("ttf");
+  font-weight: 900;
+  font-display: swap;
+} 
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -82,7 +106,7 @@ blockquote {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -92,9 +116,8 @@ blockquote {
 }
 
 .section-title {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 50px;
-  text-align: center;
-  margin-bottom: 40px;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 120%;
+  margin-bottom: 30px;
 }

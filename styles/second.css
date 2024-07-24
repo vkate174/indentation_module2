@@ -1,0 +1,19 @@
+.container {}
+
+.div {}
+
+.margins {}
+
+.ol {}
+
+.photo {
+  float: left;
+}
+
+.photo__two {
+  float: right;
+}
+
+.section {}
+
+.section-title {}
