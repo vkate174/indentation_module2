@@ -121,3 +121,11 @@ blockquote {
   line-height: 120%;
   margin-bottom: 30px;
 }
+
+.text {
+  padding-bottom: 30px;
+}
+
+/* .text:last-of-type {
+  padding-bottom: 0;
+} */

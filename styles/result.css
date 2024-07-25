@@ -1,0 +1,22 @@
+.container {}
+
+.section {}
+
+.section-title {}
+
+.result__item {
+  
+}
+
+.result__list {
+  list-style-type: "-";
+
+}
+
+.result__text {}
+
+.indentation-result {
+  border-radius: 10px;
+  background: rgb(241, 241, 241);
+  padding: 0 30px;
+}

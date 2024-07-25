@@ -6,14 +6,35 @@
 
 .ol {}
 
-.photo {
+.indentation-first__photo {
   float: left;
+  margin-bottom: 30px;
+  margin-right: 30px;
 }
 
 .photo__two {
   float: right;
+  margin-left: 40px;
 }
 
 .section {}
 
 .section-title {}
+
+.indentation-first {
+  overflow: auto;
+}
+
+.indentation-first__text_two{
+  clear: left;
+
+
+}
+
+/* .indentation-first__text {
+  padding-bottom: 30px;
+}
+
+.indentation-first__text:last-of-type {
+  padding-bottom: 0;
+} */
