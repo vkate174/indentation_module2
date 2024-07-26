@@ -1,22 +1,32 @@
-.container {}
-
-.section {}
-
-.section-title {}
+.resul__title {
+  margin-bottom: 20px;
+}
 
 .result__item {
-  
+  margin-bottom: 10px;
+}
+
+.result__item::before {
+  content: "─ ";
+}
+
+.result__item:last-of-type {
+  margin-bottom: 0;
 }
 
 .result__list {
-  list-style-type: "-";
-
+  margin-bottom: 30px;
 }
 
-.result__text {}
+.result__text {
+  white-space: pre-line;
+  padding-bottom: 0;
+}
 
 .indentation-result {
+  width: 1140px;
   border-radius: 10px;
   background: rgb(241, 241, 241);
-  padding: 0 30px;
+  margin: 0 auto;
+  padding: 25px 30px 25px 45px;
 }
