@@ -26,8 +26,8 @@
   </section>
 
   <section class="section">
-    <div class="container_navigation">
-      <nav class="navigation">
+    <div class="navigation">
+      <nav class="navigation__menu">
         <h2 class="section-title navigation__title">Содержание:</h2>
         <ol class="navigation__list">
           <li class="navigation__item">
@@ -65,7 +65,7 @@
 
   <section class="section">
     <div class="container indentation-second">
-      <h2 id="part2" class="section-title">Отступ задается последнему возможному элементу в DOM-дереве</h2>
+      <h2 id="part2" class="section-title">Отступ задается последнему возможному элементу в<br> DOM-дереве</h2>
       <p class="text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
       <img src="img/codeRecipe.jpg" class="indentation__photo photo">
       <img src="img/listRecipe.jpg" class="indentation__photo_two photo">
@@ -79,7 +79,7 @@
         Казалось бы, можно задать отступ параграфу &lt;p&gt;, либо обёртке &lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.
       </p>
       <p class="text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>  
-      <img src="img/example3NestingCode.jpg" class="photo">
+      <img src="img/example3NestingCode.jpg" class="photo photo__code">
       <p class="text">
         В случае с заголовком, если ему необходим отступ сверху, последним элементом будет section. Именно для него задается padding-top, а не div с классом container. Свойства margin, которые стоят по умолчанию необходимо обнулить.
       </p>

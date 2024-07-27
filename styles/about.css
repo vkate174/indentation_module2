@@ -1,6 +1,6 @@
 .container {}
 
-.container_navigation {
+.navigation {
   border-radius: 10px;
   background: rgb(241, 241, 241);
   width: 1140px;
@@ -31,7 +31,11 @@
   /* text-decoration:solid; */
   /* text-decoration: underline;
   text-underline-offset: 4px; */
-  border-bottom: 0.05rem solid rgb(0, 0, 0);
+  /* border-bottom: 0.06rem solid rgb(0, 0, 0); */
+  text-underline-offset: 1px;
+  text-decoration: underline;
+  text-decoration-color: aqua;
+  z-index: -1;
 }
 
 .section {}
@@ -57,4 +61,8 @@
 
 .indentation__text:last-of-type {
   padding-bottom: 0; 
+}
+
+.indentation {
+  padding-bottom: 1px;
 }

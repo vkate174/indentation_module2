@@ -1,7 +1,7 @@
 @font-face {
   font-family: Roboto;
   src: local("Roboto"), local("Roboto-Regular"),
-        url("../fonts/Roboto-Regular.ttf") format("ttf");
+        url("../fonts/Roboto-Regular.ttf");
   font-weight: 400;
   font-display: swap;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: Roboto;
   src: local("Roboto"), local("Roboto-Bold"),
-        url("../fonts/Roboto-Bold.ttf") format("ttf");
+        url("../fonts/Roboto-Bold.ttf");
   font-weight: 700;
   font-display: swap;
 } 
@@ -17,7 +17,7 @@
 @font-face {
   font-family: Roboto;
   src: local("Roboto"), local("Roboto-Black"),
-        url("../fonts/Roboto-Black.ttf") format("ttf");
+        url("../fonts/Roboto-Black.ttf");
   font-weight: 900;
   font-display: swap;
 } 
@@ -43,7 +43,7 @@ body {
   overflow-x: hidden;
   min-width: 320px; 
   min-height: 100vh;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto;
   font-style: normal;
   font-size: 20px;
   font-weight: 400;
@@ -108,12 +108,11 @@ blockquote {
 .container {
   max-width: 1080px;
   margin: 0 auto;
-  
 }
 
 .section {
-  margin-top: 25px;
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .section-title {
@@ -126,12 +125,8 @@ blockquote {
 }
 
 .text {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
-
-/* .text:last-of-type {
-  padding-bottom: 0;
-} */
 
 .photo {
   margin-bottom: 30px;
