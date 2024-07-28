@@ -1,6 +1,8 @@
 @import url(normolize.css);
 @import url(index.css);
-@import url(about.css);
+@import url(header.css);
+@import url(navigation.css);
 @import url(first.css);
 @import url(second.css);
+@import url(third.css);
 @import url(result.css);

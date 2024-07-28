@@ -10,15 +10,15 @@
   <title>Итоговая работа модуля CSS</title>
 </head>
 <body>
-  <section class="section">
+  <section class="section header">
     <div class="container indentation">
-      <h1 class="title section-title">Отступы в вёрстке: margin и padding</h1>
-      <p class="indentation__text">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода.
+      <h1 class="section-title indentation__title">Отступы в вёрстке: margin и padding</h1>
+      <p class="text indentation__text">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода.
         Если точнее — речь пойдет об основных правилах организации отступов.
         Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть.
         При этом другие части кода продолжат нормально работать.
       </p>
-      <p class="indentation__text">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы.
+      <p class="text indentation__text">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы.
         Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков.
         Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.
       </p>
@@ -26,7 +26,7 @@
   </section>
 
   <section class="section">
-    <div class="navigation">
+    <div class="container navigation">
       <nav class="navigation__menu">
         <h2 class="section-title navigation__title">Содержание:</h2>
         <ol class="navigation__list">
@@ -46,75 +46,75 @@
 
   <section class="section">
     <div class="container indentation-first">
-      <h2 id="part1" class="section-title">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h2>
-      <div class="div">
-        <img src="img/margin.jpg" class="indentation-first__photo">
-        <p class="indentation-first__text text"><strong>ВАЖНО:</strong> <em>margin</em> всегда задают от предыдущего элемента к следующему.</p>
-        <p class="indentation-first__text text">Свойство <em>margin</em> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <em>margin-right</em> и <em>margin-bottom</em>.</p>
-        <p class="indentation-first__text text">(!) Свойства <em>margin-left</em> и <em>margin-top</em> используются крайне редко.</p>
-        <p class="indentation-first__text text">Для <em>padding</em> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
+      <h2 id="part1" class="section-title indentation-first__title">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h2>
+      <div class="indentation-first__div">
+        <img src="img/one.jpg" class="photo indentation-first__photo" title="Скриншот с margin-right и margin-bottom">
+        <p class="text indentation-first__text"><strong>ВАЖНО:</strong> <em>margin</em> всегда задают от предыдущего элемента к следующему.</p>
+        <p class="text indentation-first__text">Свойство <i>margin</i> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <i>margin-right</i> и <i>margin-bottom</i>.</p>
+        <p class="text indentation-first__text">(!) Свойства <em>margin-left</em> и <em>margin-top</em> используются крайне редко.</p>
+        <p class="text indentation-first__text">Для <em>padding</em> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
     </div>
-    <div class="div">
-      <img src="img/padding.jpg" class="photo__two photo">
-      <p class="indentation-first__text indentation-first__text_two text">Отступ внутри блока сверху или слева<br> реализуется через <em>padding-top</em> и <em>padding-left</em> родителя.</p>
-      <p class="indentation-first__text indentation-first__text_two text">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
-      <p class="indentation-first__text indentation-first__text_two text">Изначально элемент статичен, а его положение может меняться только под воздействием <br>свойств других блоков или свойств родителя.</p>              
+    <div class="indentation-first__div">
+      <img src="img/two.jpg" class="photo indentation-first__photo indentation-first__photo_two" title="Скриншот с padding-top>
+      <p class="text indentation-first__text indentation-first__text_two">Отступ внутри блока сверху или слева<br> реализуется через <i>padding-top</i> и <i>padding-left</i> родителя.</p>
+      <p class="text indentation-first__text indentation-first__text_two">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
+      <p class="text indentation-first__text indentation-first__text_two ">Изначально элемент статичен, а его положение может меняться только под воздействием <br>свойств других блоков или свойств родителя.</p>              
     </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container indentation-second">
-      <h2 id="part2" class="section-title">Отступ задается последнему возможному элементу в<br> DOM-дереве</h2>
-      <p class="text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
-      <img src="img/codeRecipe.jpg" class="indentation__photo photo">
-      <img src="img/listRecipe.jpg" class="indentation__photo_two photo">
-      <p class="text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
-      <div class="listItem">
-        <img src="img/exampleandCodeMargin.jpg" class="photo">
-        <p class="text__vaz"><strong>ВАЖНО</strong>: здесь <em>.list-item</em> — последний возможный элемент в котором мы задаём отступ, чтобы разделить<br> списки.</p>        
+      <h2 id="part2" class="section-title indentation-second__title">Отступ задается последнему возможному элементу в<br> DOM-дереве</h2>
+      <p class="text indentation-second__text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
+      <img src="img/three.jpg" class="photo indentation-second__photo indentation-second__photo_three" title="Скриншот с кодом списка">
+      <img src="img/four.jpg" class="photo indentation-second__photo indentation-second__photo_four" title="Скриншот со списком">
+      <p class="text indentation-second__text indentation-second__text_margin">Отступ делают за счёт соседних элементов, а не дочерних:</p>
+      <div class="indentation-second__listItem">
+        <img src="img/five.jpg" class="photo indentation-second__photo indentation-second__photo_five" title="Скриншот с list-item">
+        <p class="text indentation-second__text indentation-second__text_listItem"><strong>ВАЖНО</strong>: здесь <em>.list-item</em> — последний возможный элемент в котором мы задаём отступ, чтобы разделить<br> списки.</p>        
       </div>
 
-      <p class="text">
-        Казалось бы, можно задать отступ параграфу &lt;p&gt;, либо обёртке &lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.
+      <p class="text indentation-second__text">
+        Казалось бы, можно задать отступ параграфу <i>&lt;p&gt;</i>, либо обёртке <i>&lt;article&gt;</i> для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.
       </p>
-      <p class="text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>  
-      <img src="img/example3NestingCode.jpg" class="photo photo__code">
-      <p class="text">
-        В случае с заголовком, если ему необходим отступ сверху, последним элементом будет section. Именно для него задается padding-top, а не div с классом container. Свойства margin, которые стоят по умолчанию необходимо обнулить.
+      <p class="text indentation-second__text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>  
+      <img src="img/six.jpg" class="photo indentation-second__photo indentation-second__photo_six" title="Скриншот с кодом со вложенностью">
+      <p class="text indentation-second__text">
+        В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <i>section</i>. Именно для него задается <i>padding-top</i>, а не <i>div</i> с классом <i>container</i>. Свойства <i>margin</i>, которые стоят по умолчанию необходимо обнулить.
       </p>
-      <img src="img/exampleCatAndCode.jpg" class="photo">
-      <p class="text">
-        Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.
+      <img src="img/seven.jpg" class="photo indentation-second__photo indentation-second__photo_seven" title="Скриншот с element со вложенностью ">
+      <p class="text indentation-second__text">
+        Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас<br>. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.
       </p>
     </div>
   </section>
 
   <section class="section">
     <div class="container indentation-third">
-      <h2 id="part3" class="section-title">Для последнего элемента группы отступ всегда обнуляется</h2>
-      <p class="indentation-third__text text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
-      <p class="indentation-third__text text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
-      <img src="img/recipe1.jpg" class="photo">
-      <p class="text">
-        В соответствии со вторым принципом: последний margin обнуляется, а нижний отступ задаётся через padding для section. Я чаще всего задаю padding для секции с обоих сторон, если расстояние между секциями 100px задаю секциям padding-top:50px и padding-bottom:50px.
+      <h2 id="part3" class="section-title indentation-third__title">Для последнего элемента группы отступ всегда обнуляется</h2>
+      <p class="text indentation-third__text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
+      <p class="text indentation-third__text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
+      <img src="img/eight.jpg" class="photo indentation-third__photo indentation-third__photo_eight" title="Скриншот с примером списка с margin-bottom">
+      <p class="text indentation-third__text">
+        В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а нижний отступ задаётся через <i>padding</i> для <i>section</i>. Я чаще всего задаю <i>padding</i> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <i>padding-top:50px</i> и <i>padding-bottom:50px</i>.
       </p>
-      <img src="img/recipe2.jpg" class="photo">
-      <img src="img/codeSection1.jpg" class="photo">
-      <img src="img/codeSection2.jpg" class="photo">
-      <p class="text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
-      <img src="img/exampleMenu.jpg" class="photo">
-      <img src="img/exampleMenuCode.jpg" class="photo">
-      <p class="text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
-      <img src="img/cssMargin.jpg" class="photo"> 
-      <p class="text">Советую использовать псевдоклассы :last-child чаще других, например так:</p>
-      <img src="img/lastChild.jpg" class="last photo">
+      <img src="img/nine.jpg" class="photo indentation-third__photo indentation-third__photo_nine" title="Скриншот с примером списка с margin-bottom из element">
+      <img src="img/ten.jpg" class="photo indentation-third__photo indentation-third__photo_ten" title="Скриншот с кодом со списком">
+      <img src="img/eleven.jpg" class="photo indentation-third__photo indentation-third__photo_eleven" title="Скриншот с продолжением с кодом со списком">
+      <p class="text indentation-third__text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
+      <img src="img/twelve.jpg" class="photo indentation-third__photo indentation-third__photo_twelve" title="Скриншот с header с сайта Methed">
+      <img src="img/thirteen.jpg" class="photo indentation-third__photo indentation-third__photo_thirteen" title="Скриншот кода со списком меню ">
+      <p class="text indentation-third__text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
+      <img src="img/fourteen.jpg" class="photo indentation-third__photo indentation-third__photo_fourteen" title="Скриншот с кодом с отступами между пунктами"> 
+      <p class="text indentation-third__text">Советую использовать псевдоклассы :last-child чаще других, например так:</p>
+      <img src="img/fifteen.jpg" class="photo indentation-third__photo indentation-third__photo_fifteen" title="Скриншот с кодом с псевдоклассом last-child">
     </div>
   </section>
 
   <section class="section">
-    <div class="indentation-result">
-      <h2 class="section-title resul__title">Подытожим:</h2>
+    <div class="container result">
+      <h2 class="section-title result__title">Подытожим:</h2>
       <ul class="result__list">
         <li class="result__item">отступы задаём от предыдущего элемента к следующему</li>
         <li class="result__item">используем только margin-right и margin-bottom</li>

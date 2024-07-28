@@ -1,0 +1,33 @@
+.navigation {
+  max-width: 1140px;
+  border-radius: 10px;
+  background: var(--main-grey);
+  padding: 25px 0 25px 45px;
+}
+
+.navigation__item {
+  color: var(--main-green);
+  margin-bottom: 10px;
+}
+
+.navigation__link {
+  text-decoration:underline black;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-decoration-skip-ink: none;
+}
+
+.navigation__list {
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+.navigation__menu {
+  
+}
+
+.navigation__title {
+  margin-bottom: 20px;
+  font-size: 44px;
+  font-weight: 700;
+}

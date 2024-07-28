@@ -1,5 +1,14 @@
-.resul__title {
+.result {
+  max-width: 1140px;
+  border-radius: 10px;
+  background: var(--main-grey);
+  padding: 25px 30px 25px 45px;
+}
+
+.result__title {
   margin-bottom: 20px;
+  font-size: 44px;
+  font-weight: 700;
 }
 
 .result__item {
@@ -19,14 +28,5 @@
 }
 
 .result__text {
-  white-space: pre-line;
-  padding-bottom: 0;
-}
 
-.indentation-result {
-  width: 1140px;
-  border-radius: 10px;
-  background: rgb(241, 241, 241);
-  margin: 0 auto;
-  padding: 25px 30px 25px 45px;
 }
