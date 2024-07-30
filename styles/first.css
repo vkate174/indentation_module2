@@ -1,9 +1,14 @@
 .indentation-first {
-
+  
 }
 
 .indentation-first__div {
-  /* position: relative; */
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.indentation-first__div:last-child {
+  margin-bottom: 0;
 }
 
 .indentation-first__photo {
@@ -11,6 +16,7 @@
   margin-right: 30px;
   width: 560px;
   height: 415px;
+  margin-bottom: 0;
 }
 
 .indentation-first__photo_two {

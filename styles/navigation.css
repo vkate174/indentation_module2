@@ -12,9 +12,9 @@
 
 .navigation__link {
   text-decoration:underline black;
-  text-underline-offset: 3px;
   text-decoration-thickness: 1px;
   text-decoration-skip-ink: none;
+  text-underline-position: under;
 }
 
 .navigation__list {
